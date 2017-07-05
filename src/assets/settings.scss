@@ -1,0 +1,38 @@
+$primary-color: #2c3e50;
+$highlight-color: #4fc08d;
+
+html, body {
+  height: 100%;
+}
+
+h3 {
+  padding: 0 20px;
+}
+
+.md-col-6 {
+  width: 50%;
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.button {
+  background: $highlight-color;
+  color: white;
+  border: none;
+  margin: 4px;
+  font-size: 14px;
+  padding: 14px;
+  cursor: pointer;
+}
+
+.button.active {
+  background: #38a9dc;
+}
+
+.button.disabled {
+  background: #cfd0cf;
+  cursor: not-allowed;
+}
