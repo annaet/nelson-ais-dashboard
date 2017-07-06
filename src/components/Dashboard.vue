@@ -15,6 +15,7 @@ import L from 'leaflet'
 import 'leaflet.awesome-markers/dist/leaflet.awesome-markers'
 import 'leaflet.heat/dist/leaflet-heat'
 import API from '../services/api'
+import * as d3 from 'd3'
 
 export default {
   name: 'about',
@@ -41,7 +42,6 @@ export default {
   },
   methods: {
     buildHistogram (data) {
-      let d3 = window.d3
       var formatCount = d3.format(',.0f')
 
       var svg = d3.select('svg')

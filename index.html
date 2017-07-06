@@ -24,7 +24,6 @@
         for (var file of chunk.files) {
           if (file.match(/\.(js|css)$/)) { %>
     <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
-    <script src="http://d3js.org/d3.v4.min.js"></script>
   </head>
   <body style="height: 100%">
     <div id="app" style="height: 100%">This is your fallback content in case JavaScript fails to load.</div>
