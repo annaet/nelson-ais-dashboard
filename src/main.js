@@ -6,6 +6,9 @@ import VueResource from 'vue-resource'
 import App from './App'
 import router from './router'
 
+import Histogram from './components/Histogram.vue'
+Vue.component('histogram', Histogram)
+
 Vue.use(VueResource)
 
 Vue.config.productionTip = false
